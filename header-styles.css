@@ -1,0 +1,74 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px 10px;
+    /* border-bottom: 1px solid white; */
+}
+
+.navbar > .logo {
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 5px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.navbar > .nav-links{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navbar > .nav-links li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(194, 194, 194);
+}
+
+.navbar > .nav-links li a:hover{
+    color: white;
+}
+
+.navbar > .nav-links li a:after {
+    content: "";
+    position: absolute;
+    background-color: deepskyblue;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: .3s ease;
+}
+
+.navbar > .nav-links li a:hover:after {
+    width: 100%;
+}
+
+.navbar > .book-now-button {
+    align-self: center;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+    transition: .3s ease;
+
+}
+
+.navbar > .book-now-button:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
+    border: none;
+    color: black;
+}
